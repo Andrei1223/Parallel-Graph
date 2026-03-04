@@ -60,9 +60,8 @@ make
 This generates two binaries: serial (for baseline comparison) and parallel (the thread pool implementation).
 
 
-## Testing and Grading
+## Testing
 
-### Automated Checker
 The testing infrastructure verifies both the final sum and the efficiency of the parallel 
 execution. Navigate to the `tests/` directory:
 
@@ -75,6 +74,7 @@ make check
  - **Language:** C
  - **Libraries:** pthreads (POSIX Threads)
  - **Environment:** Linux-based systems
+
 
 
 
