@@ -1,0 +1,47 @@
+cd ../src/.. && checkpatch.pl -f src/*.c
+No typos will be found - file '/usr/local/bin/spelling.txt': No such file or directory
+No structs that should be const will be found - file '/usr/local/bin/const_structs.checkpatch': No such file or directory
+--------------
+src/os_graph.c
+--------------
+total: 0 errors, 0 warnings, 115 lines checked
+
+src/os_graph.c has no obvious style problems and is ready for submission.
+-------------
+src/os_list.c
+-------------
+total: 0 errors, 0 warnings, 59 lines checked
+
+src/os_list.c has no obvious style problems and is ready for submission.
+-------------------
+src/os_threadpool.c
+-------------------
+total: 0 errors, 0 warnings, 195 lines checked
+
+src/os_threadpool.c has no obvious style problems and is ready for submission.
+--------------
+src/parallel.c
+--------------
+total: 0 errors, 0 warnings, 145 lines checked
+
+src/parallel.c has no obvious style problems and is ready for submission.
+------------
+src/serial.c
+------------
+total: 0 errors, 0 warnings, 45 lines checked
+
+src/serial.c has no obvious style problems and is ready for submission.
+
+NOTE: Ignored message types: ARRAY_SIZE AVOID_EXTERNS C99_COMMENTS EMAIL_SUBJECT ENOSYS FILE_PATH_CHANGES GIT_COMMIT_ID NEW_TYPEDEFS SYMBOLIC_PERMS
+cd ../src/.. && cpplint --recursive src/
+/bin/sh: 1: cpplint: not found
+Makefile:16: recipe for target 'lint' failed
+make: [lint] Error 127 (ignored)
+cd ../src/.. && shellcheck tests/*.sh
+/bin/sh: 1: shellcheck: not found
+Makefile:16: recipe for target 'lint' failed
+make: [lint] Error 127 (ignored)
+cd ../src/.. && pylint tests/*.py
+/bin/sh: 1: pylint: not found
+Makefile:16: recipe for target 'lint' failed
+make: [lint] Error 127 (ignored)
